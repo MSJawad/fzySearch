@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fzysearch"
+version = "1.0.0"
+description = "A small Levenshtein-distance spellchecker"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Mohammad Solaiman Jawad" }]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+fzysearch = "fzysearch.__main__:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
