@@ -1,5 +1,7 @@
 # fzySearch
 
+[![CI](https://github.com/MSJawad/fzySearch/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/MSJawad/fzySearch/actions/workflows/ci.yml)
+
 A small spellchecker in pure Python. It suggests corrections for a word by
 computing its [Levenshtein edit distance](https://en.wikipedia.org/wiki/Levenshtein_distance)
 to every word in a list of about 10,000 common English words, then ranking the
